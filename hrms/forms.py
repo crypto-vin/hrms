@@ -6,6 +6,7 @@ from django.core import validators
 from django.utils import timezone
 from django.db.models import Q
 import time
+
 class RegistrationForm (UserCreationForm):
     username = forms.CharField(widget=forms.TextInput(attrs={'class':'form-control', 'placeholder':'Username'}))
     email = forms.EmailField(widget=forms.EmailInput(attrs={'class':'form-control','placeholder':'Valid Email is required'}))
